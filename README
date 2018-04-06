@@ -9,6 +9,13 @@ Steps:
    - https://github.com/opencog/atomspace/blob/master/opencog/query/README.md
 3. Build and run query.cpp
    - you can use cmake to build it similarily to opencog
+
+        cd to project root dir
+        mkdir build
+        cd build
+        cmake ..
+        make
+
 4. Answer questions below
 
 Questions:
