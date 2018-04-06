@@ -1,0 +1,26 @@
+Steps:
+1. Download and build opencog, you will need at least two libraries:
+   - cogutil - http://github.com/opencog/cogutil
+   - atomspace - https://github.com/opencog/atomspace
+2. Read about opencog Atoms and pattern matching, some useful links:
+   - https://wiki.opencog.org/w/Hands_On_With_OpenCog#Atoms
+   - https://wiki.opencog.org/w/Manipulating_Atoms_in_C%2B%2B
+   - https://wiki.opencog.org/w/SatisfactionLink_and_BindLink
+   - https://github.com/opencog/atomspace/blob/master/opencog/query/README.md
+3. Build and run query.cpp
+   - you can use cmake to build it similarily to opencog
+4. Answer questions below
+
+Questions:
+1. What does "query.cpp" do?
+2. Does it work correctly? Explain your answer.
+3. Does its execution time depend on input data length linearly?
+   (Please modify the program and make some experiments.)
+   What time do you have for 256 bounding boxes, 512, 1024?
+   Does it take too long to search in 16384 bounding boxes?
+4. Using code inspection and debugger investigate why time is not linear?
+   (look in code at https://github.com/opencog/atomspace/tree/master/opencog/query)
+5. Is it possible to fix time and query issues by changing
+   input data and query structure?
+6. Try to fix issue by overriding methods in PatternMatchCallback.
+
