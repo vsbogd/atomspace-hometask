@@ -26,8 +26,9 @@ Questions:
    What time do you have for 256 bounding boxes, 512, 1024?
    Does it take too long to search in 16384 bounding boxes?
 4. Using code inspection and debugger investigate why time is not linear?
-   (look in code at https://github.com/opencog/atomspace/tree/master/opencog/query)
-5. Is it possible to fix time and query issues by changing
-   input data and query structure?
-6. Try to fix issue by overriding methods in PatternMatchCallback.
+   (look at code in https://github.com/opencog/atomspace/tree/master/opencog/query)
+5. How one can fix time and query issues by changing query only?
+   (without data structure modifications)
+6. Try to fix issue by using your own PatternMatchCallback implementation
+   (you can inherit one of default implementations to reuse most of code)
 
